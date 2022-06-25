@@ -1,7 +1,7 @@
 ROOT_PATH = $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 BUILD_DIR := $(ROOT_PATH)/build
 
-ANDROID_NDK := $(ROOT_PATH)/android-ndk-r17b
+ANDROID_NDK := $(ROOT_PATH)/android-ndk-r23c
 NDK_BUILD := $(ANDROID_NDK)/ndk-build
 NDK_APP_OUT := $(BUILD_DIR)/.obj
 NDK_OUT := $(BUILD_DIR)/out
@@ -18,7 +18,7 @@ BORINGSSL_BUILD_DIR := $(BORINGSSL_ROOT_DIR)/build
 
 
 ABIS := armeabi-v7a arm64-v8a x86 x86_64
-API := 23
+API := 31
 
 $(shell mkdir -p $(BUILD_DIR))
 $(shell mkdir -p $(NDK_OUT))

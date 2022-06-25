@@ -1,5 +1,5 @@
 #!/bin/sh
-branch=android-8.1.0_r41
+branch=android-12.1.0_r1
 
 clone() {
   repo=$1
@@ -8,8 +8,8 @@ clone() {
 
 sudo apt install cmake ninja-build golang-go -y
 
-wget -c https://dl.google.com/android/repository/android-ndk-r17b-linux-x86_64.zip
-unzip android-ndk-r17b-linux-x86_64.zip
+wget -c https://dl.google.com/android/repository/android-ndk-r23c-linux.zip
+unzip android-ndk-r23c-linux.zip
 
 mkdir src
 
